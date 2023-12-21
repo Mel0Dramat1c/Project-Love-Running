@@ -43,15 +43,15 @@ h1 {
     color: #252525;
 }
 
-#menu > li {
-    margin-bottom: 1em;
-}
-
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
-} 
+}
+
+#menu > li {
+    margin-bottom: 1em;
+}
 
 .active {
     border-bottom: 1px solid #3a3a3a;
@@ -84,14 +84,20 @@ nav {
 
 /* Main Content */
 main {
-    background-color: lightblue;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
 }
 
+/* Hero Section */
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url("../images/hero-image.webp") no-repeat center center/cover;
+}
+
 /* Footer */
-#social-networks{
+#social-networks {
     text-align: center;
     padding: 20px 0;
     display: flex;
@@ -102,7 +108,7 @@ main {
 #social-networks i {
     font-size: 160%;
     padding: 5%;
-    color:#3a3a3a;
+    color: #3a3a3a;
 }
 
 /* Media query: tablets and larger (768px and up)*/
